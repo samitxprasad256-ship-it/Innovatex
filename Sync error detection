@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+void route_support(const char* issue) {
+    if (strcmp(issue, "frozen account") == 0) {
+        printf("Route to: High Priority Support Team\n");
+    } else {
+        printf("Route to: Standard Support Queue\n");
+    }
+}
+
+int main() {
+    route_support("frozen account");
+    route_support("password reset");
+    return 0;
+}
